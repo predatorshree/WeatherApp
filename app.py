@@ -6,7 +6,7 @@ def data_get():
 
     city = city_name.get()
 
-    data = requests.get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=ea60abfebe2223dc7fd4a8e254c96abb").json()
+    data = requests.get("ADD API"+city+"&appid=ea60abfebe2223dc7fd4a8e254c96abb").json()
 
     w_label1.config(text=data["weather"][0]["main"])
     wb_label1.config(text=data["weather"][0]["description"])
